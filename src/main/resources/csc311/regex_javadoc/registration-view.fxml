@@ -31,7 +31,7 @@
                <children>
                   <Label fx:id="fNameLbl" text="First Name :">
                      <HBox.margin>
-                        <Insets left="-20.0" />
+                        <Insets left="-30.0" />
                      </HBox.margin>
                   </Label>
                   <TextField fx:id="fNameTF" prefHeight="25.0" prefWidth="269.0">
@@ -39,7 +39,7 @@
                         <Insets left="17.0" />
                      </HBox.margin>
                   </TextField>
-                  <Label fx:id="f_NameVldLbl" text="Invalid First Name">
+                  <Label fx:id="f_NameVldLbl" text="Invalid First Name" textFill="RED">
                      <HBox.margin>
                         <Insets left="30.0" />
                      </HBox.margin>
@@ -50,7 +50,7 @@
                <children>
                   <Label fx:id="lNameLbl" text="Last Name :">
                      <HBox.margin>
-                        <Insets left="-20.0" />
+                        <Insets left="-30.0" />
                      </HBox.margin>
                   </Label>
                   <TextField fx:id="lNameTF" prefHeight="25.0" prefWidth="269.0">
@@ -58,7 +58,7 @@
                         <Insets left="17.0" />
                      </HBox.margin>
                   </TextField>
-                  <Label fx:id="l_NameVldLbl" text="Invalid Last Name">
+                  <Label fx:id="l_NameVldLbl" text="Invalid Last Name" textFill="RED">
                      <HBox.margin>
                         <Insets left="30.0" />
                      </HBox.margin>
@@ -69,15 +69,15 @@
                <children>
                   <Label fx:id="emailLbl" text="Email : ">
                      <HBox.margin>
-                        <Insets left="50.0" />
+                        <Insets left="62.0" />
                      </HBox.margin>
                   </Label>
-                  <TextField fx:id="emailTF" prefHeight="25.0" prefWidth="269.0" promptText="Enter your Farmingdale.edu Email Address">
+                  <TextField fx:id="emailTF" prefHeight="25.0" prefWidth="269.0" promptText="Enter your @farmingdale.edu Email Address">
                      <HBox.margin>
-                        <Insets left="39.0" />
+                        <Insets left="34.0" />
                      </HBox.margin>
                   </TextField>
-                  <Label fx:id="email_VldLbl" text="Invalid Farmingdale Email Address">
+                  <Label fx:id="email_VldLbl" text="Invalid Farmingdale Email Address" textFill="RED">
                      <HBox.margin>
                         <Insets left="30.0" />
                      </HBox.margin>
@@ -88,15 +88,18 @@
                <children>
                   <Label fx:id="dobLbl" text="Date of Birth : ">
                      <HBox.margin>
-                        <Insets left="-40.0" />
+                        <Insets left="-20.0" />
                      </HBox.margin>
                   </Label>
                   <TextField fx:id="dobTF" prefHeight="25.0" prefWidth="269.0" promptText="MM/DD/YYYY">
                      <HBox.margin>
-                        <Insets left="20.0" />
+                        <Insets left="5.0" />
                      </HBox.margin>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
                   </TextField>
-                  <Label fx:id="dobVldLbl" text="Invalid Date of Birth">
+                  <Label fx:id="dobVldLbl" text="Invalid Date of Birth" textFill="RED">
                      <HBox.margin>
                         <Insets left="30.0" />
                      </HBox.margin>
@@ -107,7 +110,7 @@
                <children>
                   <Label fx:id="zipLbl" text="Zip Code :">
                      <HBox.margin>
-                        <Insets left="-20.0" />
+                        <Insets left="-30.0" />
                      </HBox.margin>
                   </Label>
                   <TextField fx:id="zipTF" prefHeight="25.0" prefWidth="269.0" promptText="(Enter 5-Digit ZIP Code)">
@@ -115,10 +118,10 @@
                         <Insets left="200.0" />
                      </opaqueInsets>
                      <HBox.margin>
-                        <Insets left="24.0" />
+                        <Insets left="18.0" />
                      </HBox.margin>
                   </TextField>
-                  <Label fx:id="zipVldLbl" text="Invalid Zip Code">
+                  <Label fx:id="zipVldLbl" text="Invalid Zip Code" textFill="RED">
                      <HBox.margin>
                         <Insets left="30.0" />
                      </HBox.margin>
@@ -134,7 +137,7 @@
       </GridPane>
    </center>
    <top>
-      <Label text="Registration Form" BorderPane.alignment="BOTTOM_CENTER">
+      <Label text="Registration Form" textFill="#196123" BorderPane.alignment="BOTTOM_CENTER">
          <BorderPane.margin>
             <Insets top="10.0" />
          </BorderPane.margin>

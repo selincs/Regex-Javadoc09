@@ -72,6 +72,7 @@ public class RegistrationController {
     @FXML
     private Label zipVldLbl;
 
+
     //Set visibility of vldLbls to Off unless invalid entry input
     //Color vldLbls to red
     //Req says when focus is moved off TextField, validate -> Regex validation -> Visibility of label
