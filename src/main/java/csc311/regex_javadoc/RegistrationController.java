@@ -173,11 +173,11 @@ public class RegistrationController implements Initializable {
      * @version JDK 21
      */
     private void validateAddUser() {
-        boolean firstNameValid = f_NameVldLbl.isVisible() == false && fNameTF != null && !fNameTF.getText().trim().isEmpty();
-        boolean lastNameValid = l_NameVldLbl.isVisible() == false && lNameTF != null && !lNameTF.getText().trim().isEmpty();
-        boolean zipValid = zipVldLbl.isVisible() == false && zipTF != null && !zipTF.getText().trim().isEmpty();
-        boolean emailValid = emailVldLbl.isVisible() == false && emailTF != null && !emailTF.getText().trim().isEmpty();
-        boolean dobValid = dobVldLbl.isVisible() == false && dobTF != null && !dobTF.getText().trim().isEmpty();
+        boolean firstNameValid = !f_NameVldLbl.isVisible() && fNameTF != null && !fNameTF.getText().trim().isEmpty();
+        boolean lastNameValid = !l_NameVldLbl.isVisible() && lNameTF != null && !lNameTF.getText().trim().isEmpty();
+        boolean zipValid = !zipVldLbl.isVisible() && zipTF != null && !zipTF.getText().trim().isEmpty();
+        boolean emailValid = !emailVldLbl.isVisible() && emailTF != null && !emailTF.getText().trim().isEmpty();
+        boolean dobValid = !dobVldLbl.isVisible() && dobTF != null && !dobTF.getText().trim().isEmpty();
 
         addBtn.setDisable(!(firstNameValid && lastNameValid && zipValid && emailValid && dobValid));
     }
